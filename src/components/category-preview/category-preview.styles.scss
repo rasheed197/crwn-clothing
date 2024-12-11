@@ -17,3 +17,22 @@
     }
   }
   
+
+  @media only screen and (max-width: 800px) {
+    .category-preview-container {
+      .preview {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 20px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .category-preview-container {
+      .preview {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+        column-gap: 10px;
+      }
+    }
+  }

@@ -22,13 +22,35 @@
         }
       }
     }
-  
-    .total {
-      font-size: 36px;
-      text-transform: capitalize;
-      position: fixed;
-      bottom: 80px;
-      right: 100px;
+  }
+
+  .checkout-total {
+    font-size: 36px;
+    text-transform: capitalize;
+    position: fixed;
+    bottom: 80px;
+    right: 100px;
+  }
+
+
+  @media only screen and (max-width: 800px) {
+    .checkout-container {
+      margin: 50px 0 auto 0;
+      width: 100%;
+      overflow-x: auto;
+      column-gap: 10px;
     }
   }
-  
+
+  @media only screen and (max-width: 800px) {
+    .checkout-total-container {
+      text-align: center;
+
+      .checkout-total {
+        display: inline-block;
+        text-align: center;
+        position: static;
+        margin-top: auto;
+      }
+    }
+  }
